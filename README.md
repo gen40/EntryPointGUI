@@ -1,2 +1,2 @@
 # EntryPointGUI
-entry point gui made by gen40 some features from unsourced pyramid and yes
+Credits go to Unsourced Pyramid, Yes, JasonJJK, walmort and more!
