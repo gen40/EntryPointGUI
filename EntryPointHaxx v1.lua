@@ -1,3 +1,4 @@
+-- for exploits that do not support return {} (ui libraries) i made it so that they do get supported using this which doesn't use httpget and that the ui library is inside the actual script
 local library = {count = 0, queue = {}, callbacks = {}, rainbowtable = {}, toggled = true, binds = {}}
 local defaults
 do
@@ -1865,7 +1866,21 @@ if getgenv().console == true then
                                        
     ]==]
     end
+    if IS_ARCH then
+        rconsoleprint("\n")
+        rconsoleprint [==[
+                   _       ______    _ _ _   _             
+    /\            | |     |  ____|  | (_) | (_)            
+   /  \   _ __ ___| |__   | |__   __| |_| |_ _  ___  _ __  
+  / /\ \ | '__/ __| '_ \  |  __| / _` | | __| |/ _ \| '_ \ 
+ / ____ \| | | (__| | | | | |___| (_| | | |_| | (_) | | | |
+/_/    \_\_|  \___|_| |_| |______\__,_|_|\__|_|\___/|_| |_|
+
+    ]==]
+    end
 else
-    print("EntryPointHaxx v1 successfully loaded!")
+    if getgenv().console == false then
+        print("EntryPointHaxx v1 successfully loaded!")
+    end
 end
 print("Credits go to Unsourced Pyramid, Yes, JasonJJK, walmort and more!")
