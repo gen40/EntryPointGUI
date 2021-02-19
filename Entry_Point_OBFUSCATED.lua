@@ -1359,11 +1359,6 @@ else
         print("Loading...")
     end
 end
-
-if not Drawing then
-    error("No Drawing Library!")
-    return
-end
 local load = loadstring("return {}")
 if
     type(load) ~=
@@ -1444,10 +1439,6 @@ spawn(
     function()
         while wait(1) do
             if gui.flags.ESPlol then
-                if not Drawing then
-                    error("Drawing Library doesn't exist on your exploit!")
-                    return
-                end
                 local LP = game:GetService("Players").LocalPlayer
                 EspPlrs = {}
                 function IsPartVisible(Part1, Part2)
