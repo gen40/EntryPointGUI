@@ -1763,7 +1763,7 @@ local spawn =
             CFrame.new(190.754837, 188.499985, 76.4451523)
     end
 )
-Teleports:Section("The Withdrawl TP (WIP)")
+Teleports:Section("The Withdrawl TP")
 local spawn2 =
     Teleports:Button(
     "Spawn",
@@ -1818,6 +1818,15 @@ local Storageroomtamper =
     function()
         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
             game:GetService("Workspace").Level.Geometry.StorageRoom.BoxLocation.CFrame
+    end
+)
+Teleports:Section("The Lakehouse TP")
+local controlroom =
+    Teleports:Button(
+    "Control Room",
+    function()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
+            game:GetService("Workspace").Level.Geometry["2"].SecurityComputer1.ImgScreen.CFrame
     end
 )
 if getgenv().console == false then
