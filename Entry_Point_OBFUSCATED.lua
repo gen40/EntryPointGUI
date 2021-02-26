@@ -1838,6 +1838,21 @@ local basementscientist =
             CFrame.new(-5.61629915, -6.39999771, 5.7047925)
     end
 )
+local controlroom =
+    Teleports:Button(
+    "Control Room",
+    function()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
+            game:GetService("Workspace").Level.Geometry.HackableComputer.Screen.CFrame
+    end
+)
+local screwdriverroom =
+    Teleports:Button(
+    "Screwdriver Room",
+    function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(17.5797043, 12.6000395, 11.2429724)
+    end
+)
 if getgenv().console == false then
 elseif getgenv().console == true then
     if is_synapse_function then
