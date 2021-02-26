@@ -1829,6 +1829,15 @@ local controlroom =
             game:GetService("Workspace").Level.Geometry["2"].SecurityComputer1.ImgScreen.CFrame
     end
 )
+Teleports:Section("The Scientist TP")
+local basementscientist =
+    Teleports:Button(
+    "Basement",
+    function()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
+            CFrame.new(-5.61629915, -6.39999771, 5.7047925)
+    end
+)
 if getgenv().console == false then
 elseif getgenv().console == true then
     if is_synapse_function then
